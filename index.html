@@ -8,64 +8,58 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
   <body>
-    <div class="form">
-      <h1>Create Account</h1>
-      <p>It's free and hardly takes more than 30 seconds.</p>
-      <form action="" id="form-card">
-        <div id="form-uname">
-          <input
-            type="text"
-            name="uname"
-            id="uname"
-            placeholder="Enter Username"
-          />
-        </div>
-        <div id="form-mail">
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-        </div>
-        <div id="pwd">
-          <input
-            type="password"
-            name="pswd"
-            id="pswd"
-            placeholder="Enter Password"
-          />
-          <i
-            id="pass-status"
-            class="fa fa-eye"
-            aria-hidden="true"
-            onClick="viewPassword()"
-          ></i>
-        </div>
-        <div id="pwd">
-          <input
-            type="password"
-            name="pswd"
-            id="pswd"
-            placeholder="Confirm Password"
-          />
-          <i
-            id="pass-status"
-            class="fa fa-eye"
-            aria-hidden="true"
-            onClick="viewPassword()"
-          ></i>
-        </div>
-        <div id="form-button">
-          <button>Submit</button>
-        </div>
-      </form>
-    </div>
+    <div class="container">
+      <div class="header">
+        <h2>Create Account</h2>
+        <span>It's free and hardly takes less than 30 seconds.</span>
+        <form action="" id="form-body">
+          <div id="form-uname">
+            <i class="fas fa-user"></i
+            ><input
+              type="text"
+              name="uname"
+              id="form-uname"
+              placeholder="Username"
+            />
+          </div>
+          <div id="form-mail">
+            <i class="fas fa-paper-plane"></i>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div id="form-pwd">
+            <i class="fas fa-lock"></i
+            ><input
+              type="password"
+              name="pwd"
+              id="pwd"
+              placeholder="Password"
+            />
+          </div>
+          <div id="form-pwd">
+            <i class="fas fa-lock-alt"></i
+            ><input
+              type="password"
+              name="pwd"
+              id="pwd"
+              placeholder="Confirm Password"
+            />
+          </div>
 
+          <div class="form-button">
+            <button>Sign up</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./js/validate.js"></script>
   </body>
 </html>
