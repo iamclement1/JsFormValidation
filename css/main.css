@@ -42,16 +42,16 @@ body {
 }
 
 #form-body {
-  margin: 10px;
-  padding: 10px;
-  width: 300px;
+  margin: 0;
+  padding: 0;
+  width: 370px;
 }
 
 #form-body input {
   width: 100%;
-  font-size: 20px;
-  margin: 13px;
-  padding: 20px;
+  font-size: 17px;
+  padding-left: 50px;
+  padding-top: 25px;
   border: none;
   border-bottom: 1px solid #9e9e99;
   box-sizing: border-box;
@@ -70,11 +70,10 @@ body {
 
 .icon i {
   position: absolute;
-  padding-top: 2.5em;
+  padding-top: 1.7em;
   padding-left: 1em;
   right: 1;
-
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .form-button {
@@ -85,12 +84,13 @@ body {
 }
 
 button {
-  min-width: 269px;
+  width: 40em;
   font-size: 17px;
   font-weight: 800;
   background-color: #81c784;
   border: none;
   color: #fff;
+  margin-top: 1em;
   padding: 10px;
 }
 
@@ -100,7 +100,7 @@ button:hover {
 }
 
 #form-footer p {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 #form-footer span {
@@ -111,88 +111,39 @@ button:hover {
 MEDIA QUERY
 ********************************/
 
-@media only screen and (max-width: 420px) {
-  body {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    min-height: 80vh;
-    background-color: #9e9e9e;
-  }
-
+@media only screen and (max-width: 400px) {
   .container {
     background-color: #fff;
-    min-height: 30vh;
-    min-width: 30vh;
     padding: 2em;
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
   }
+  .header {
+    margin: 10px;
+  }
 
   .header h2 {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 600;
-    padding: 3px;
+    padding: 5px;
   }
 
   .header span {
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
     color: #9e9e9e;
   }
 
   #form-body {
-    width: 210px;
-  }
-
-  #form-body input {
-    width: 100%;
-    font-size: 15px;
-
-    border: none;
-    border-bottom: 1px solid #9e9e99;
-    box-sizing: border-box;
-  }
-
-  #form-body input:hover {
-    border: none;
-    cursor: pointer;
-  }
-
-  .icon {
-    position: relative;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 280px;
   }
 
-  .icon i {
-    position: absolute;
-    padding-top: 2.2em;
-    padding-left: 1em;
-    right: 1;
-
-    /* z-index: 1; */
-  }
-
-  .form-button {
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  button {
-    min-width: 15em;
-    font-size: 13px;
-    font-weight: 800;
-    background-color: #81c784;
-    border: none;
-    color: #fff;
-    padding: 10px;
-  }
   #form-footer p {
-    font-size: 8px;
+    font-size: 12px;
+  }
+
+  #form-footer span {
+    color: #81c784;
   }
 }
