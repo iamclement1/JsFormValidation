@@ -40,6 +40,14 @@
             </div>
             <div id="form-pwd" class="icon">
               <i class="fas fa-lock"></i>
+              <!-- toggle icon to check password -->
+              <i
+                class="far fa-eye"
+                aria-hidden="true"
+                id="eye"
+                onclick="toggle()"
+              >
+              </i>
               <input
                 type="password"
                 name="pwd"
@@ -71,5 +79,6 @@
       </div>
     </div>
     <script src="./js/validate.js"></script>
+    <script src="./js/toggle.js"></script>
   </body>
 </html>

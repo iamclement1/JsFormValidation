@@ -76,6 +76,19 @@ body {
   z-index: 1;
 }
 
+#form-pwd .far {
+  position: absolute;
+  left: 20em;
+  transform: translate(0, -50%);
+  top: 50%;
+  cursor: pointer;
+  padding-right: ;
+}
+
+.far {
+  margin-right: 100em;
+}
+
 .form-button {
   display: flex;
   padding: 10px;
