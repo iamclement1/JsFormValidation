@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Form Validation</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Create Account</h1>
+      <p>It's free and hardly takes more than 30 seconds.</p>
+      <form action="" id="form-card">
+        <div id="form-uname">
+          <input
+            type="text"
+            name="uname"
+            id="uname"
+            placeholder="Enter Username"
+          />
+        </div>
+        <div id="form-mail">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+        </div>
+        <div id="pwd">
+          <input
+            type="password"
+            name="pswd"
+            id="pswd"
+            placeholder="Enter Password"
+          />
+          <i
+            id="pass-status"
+            class="fa fa-eye"
+            aria-hidden="true"
+            onClick="viewPassword()"
+          ></i>
+        </div>
+        <div id="pwd">
+          <input
+            type="password"
+            name="pswd"
+            id="pswd"
+            placeholder="Confirm Password"
+          />
+          <i
+            id="pass-status"
+            class="fa fa-eye"
+            aria-hidden="true"
+            onClick="viewPassword()"
+          ></i>
+        </div>
+        <div id="form-button">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./js/validate.js"></script>
+  </body>
+</html>
