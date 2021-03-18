@@ -45,7 +45,7 @@
                 class="far fa-eye"
                 aria-hidden="true"
                 id="eye"
-                onclick="toggle()"
+                onclick="toggle();"
               >
               </i>
               <input
@@ -53,8 +53,10 @@
                 name="pwd"
                 id="pwd"
                 placeholder="Password"
+                onkeyup="validate();"
               />
             </div>
+            <div id="validation-txt"></div>
             <div id="form-pwd" class="icon">
               <i class="fas fa-lock"></i>
               <input
