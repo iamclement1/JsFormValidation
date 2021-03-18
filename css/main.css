@@ -15,7 +15,7 @@ body {
   text-align: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: darkblue;
+  background-color: #9e9e9e;
 }
 
 .container {
@@ -23,6 +23,7 @@ body {
   min-height: 60vh;
   min-width: 50vh;
   padding: 2em;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
 .header {
   margin: 10px;
@@ -96,4 +97,102 @@ button {
 button:hover {
   cursor: pointer;
   color: aquamarine;
+}
+
+#form-footer p {
+  font-size: 12px;
+}
+
+#form-footer span {
+  color: #81c784;
+}
+
+/********************************
+MEDIA QUERY
+********************************/
+
+@media only screen and (max-width: 320px) {
+  body {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: #9e9e9e;
+  }
+
+  .container {
+    background-color: #fff;
+    min-height: 30vh;
+    min-width: 30vh;
+    padding: 2em;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  }
+
+  .header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 3px;
+  }
+
+  .header span {
+    font-size: 10px;
+    font-weight: 500;
+    color: #9e9e9e;
+  }
+
+  #form-body {
+    width: 210px;
+  }
+
+  #form-body input {
+    width: 100%;
+    font-size: 15px;
+
+    border: none;
+    border-bottom: 1px solid #9e9e99;
+    box-sizing: border-box;
+  }
+
+  #form-body input:hover {
+    border: none;
+    cursor: pointer;
+  }
+
+  .icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icon i {
+    position: absolute;
+    padding-top: 2.2em;
+    padding-left: 1em;
+    right: 1;
+
+    /* z-index: 1; */
+  }
+
+  .form-button {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    min-width: 15em;
+    font-size: 13px;
+    font-weight: 800;
+    background-color: #81c784;
+    border: none;
+    color: #fff;
+    padding: 10px;
+  }
+  #form-footer p {
+    font-size: 8px;
+  }
 }
