@@ -111,7 +111,7 @@ button:hover {
 MEDIA QUERY
 ********************************/
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 320px) {
   .container {
     background-color: #fff;
     padding: 2em;
