@@ -111,7 +111,7 @@ button:hover {
 MEDIA QUERY
 ********************************/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
   body {
     display: flex;
     margin: auto;
