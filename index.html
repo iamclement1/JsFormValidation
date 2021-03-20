@@ -4,83 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript Form Validation</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-
-    <link rel="icon" type="png/img" href="./img/img.png" />
+    <link rel="icon" type="icon/png" href="./img/img.png" />
+    <script
+      src="https://kit.fontawesome.com/20bdf30e52.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>JavaScript Form Validation</title>
   </head>
   <body>
-    <div id="background">
-      <div class="container">
-        <div class="header">
-          <h2>Create Account</h2>
-          <span>It's free and hardly takes less than 30 seconds.</span>
-          <form action="" id="form-body">
-            <div id="form-uname" class="icon">
-              <i class="fas fa-user"></i>
-              <input
-                type="text"
-                name="uname"
-                id="form-uname"
-                placeholder="Username"
-              />
-            </div>
-            <div id="form-mail" class="icon">
-              <i class="fas fa-paper-plane"></i>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Email Address"
-              />
-            </div>
-            <div id="form-pwd" class="icon">
-              <i class="fas fa-lock"></i>
-              <!-- toggle icon to check password -->
-              <i
-                class="far fa-eye"
-                aria-hidden="true"
-                id="eye"
-                onclick="toggle();"
-              >
-              </i>
-              <input
-                type="password"
-                name="pwd"
-                id="pwd"
-                placeholder="Password"
-                onkeyup="validate();"
-              />
-            </div>
-            <div id="validation-txt"></div>
-            <div id="form-pwd" class="icon">
-              <i class="fas fa-lock"></i>
-              <input
-                type="password"
-                name="pwd"
-                id="pwd"
-                placeholder="Confirm Password"
-              />
-            </div>
+    <div class="content">
+      <form action="" method="POST" id="form">
+        <div class="form_content">
+          <h1>Create Account</h1>
+          <p class="text">It is free and hardly takes more than 30 seconds.</p>
 
-            <div class="form-button">
-              <button>Sign up</button>
-            </div>
-            <div id="form-footer">
-              <p>
-                By clicking the Sign Up button, you agree to our
-                <span>Terms & Conditions</span> and <span>Privacy Policy</span>
-              </p>
-            </div>
-          </form>
+          <p class="form_group">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+            />
+          </p>
+          <p class="sms" id="usernameSms">
+            <i class="fas fa-exclamation-circle"></i> Username must be filled
+            out.
+          </p>
+
+          <p class="form_group">
+            <i class="fab fa-telegram-plane"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+          </p>
+          <p class="sms" id="emailSms">
+            <i class="fas fa-exclamation-circle"></i> Email Address is required.
+          </p>
+
+          <p class="form_group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              minlenght="8"
+            />
+            <span class="check">show</span>
+          </p>
+          <p class="sms">
+            <i class="fas fa-exclamation-circle"></i> Password is required.
+          </p>
+
+          <p class="form_group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              name="Cpassword"
+              id="Cpassword"
+              placeholder="Confirm Password"
+            />
+          </p>
+
+          <p class="sms">
+            <i class="fas fa-exclamation-circle"></i> Password does not Match.
+          </p>
+
+          <p class="form_group">
+            <button type="submit" id="button">Sign Up</button>
+          </p>
+          <p class="info">
+            By clicking the sign Up button, you agree to our
+            <a href="#"> Terms and Condition </a>, and
+            <a href="#">Privacy Policy.</a>
+          </p>
         </div>
-      </div>
+      </form>
     </div>
-    <script src="./js/validate.js"></script>
+    <script>
+      const getForm = document.querySelector('.form');
+      const getCheck = document.querySelector('.check');
+      const getPassword = document.querySelector('#password');
+      const cPassword = document.querySelector('#Cpassword');
+      const getUsername = document.querySelector('#username');
+      const getemail = document.querySelector('#email');
+      const getButton = document.querySelector('#button');
+
+      const getSms = document.querySelectorAll('.sms');
+    </script>
+
     <script src="./js/toggle.js"></script>
+    <script src="./js/validate.js"></script>
   </body>
 </html>

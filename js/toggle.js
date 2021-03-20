@@ -1,10 +1,13 @@
-var state = fasle;
-function toggle() {
-  if (state) {
-    document.getElementByI('password').setAttribute('type', 'password');
-    state = false;
+getCheck.addEventListener('click', see);
+
+function see() {
+  console.log(getPassword.type);
+
+  if (getPassword.type === 'password') {
+    getPassword.type = 'text';
+    getCheck.innerHTML = 'Hide';
   } else {
-    document.getElementByI('password').setAttribute('type', 'text');
-    state = true;
+    getPassword.type = 'password';
+    getCheck.innerHTML = 'Show';
   }
 }

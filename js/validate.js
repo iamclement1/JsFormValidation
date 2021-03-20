@@ -1,10 +1,17 @@
-function validate() {
-  var validationField = document.getElementById('validation-txt');
-  var password = document.getElementById('password-2');
-
-  var content = password.value;
-  var errors = [];
-}
-if (content.length < 8) {
-  errors.push('Your password must be at least 8 characters');
-}
+getButton.addEventListener('click', (e) => {
+  if (getUsername.value == '' || getUsername.value == null) {
+    getSms[0].style.display = 'block';
+    e.preventDefault();
+  } else if (getemail.value == '' || getemail.value == null) {
+    getSms[1].style.display = 'block';
+    e.preventDefault();
+  } else if (getPassword.value == '' || getPassword.value == null) {
+    getSms[2].style.display = 'block';
+    e.preventDefault();
+  } else if (getPassword.value !== cPassword.value) {
+    getSms[3].style.display = 'block';
+    e.preventDefault();
+  } else {
+    console.log(done);
+  }
+});
